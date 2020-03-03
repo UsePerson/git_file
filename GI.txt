@@ -1,0 +1,19 @@
+	
+	$ git rm file_name --cached
+	$ git log --oneline --graph
+	$ git log --oneline --author="name"
+	$ git log --oneline --grep=" commit's content"
+	$ git log -S " file's content"
+	$ git log --oneline --since="am or pm" --until="am or pm"
+	$ git log --oneline --since="am or pm" --until="am or pm" --after="year-month"
+	$ git commit --amend -m " revise commit the last commit "
+	$ git blame file_name ( can know who fixed )
+	$ git checkout file_name (if deleted file that shouldn't be deleted)
+	$ git reset 1b7f710^ ( commit will back to the last commit )
+	$ git relog
+	$ git clone url file ( get github file to my computer_file )
+	$ git branch ( check branch )
+	$ git branch name ( new a branch )
+	$ git branch -m name new_name ( reset branch name )
+	$ git branch -d name ( deleted a branch )
+	$ git checkout name ( change branch, using $git branch, which has * )
