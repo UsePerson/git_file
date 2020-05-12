@@ -61,7 +61,20 @@
                     message.innerHTML = err.message;
                 });
             });
-    
+
+
+            /*加在firebase的規則
+            {
+                "rules": {
+                ".read": false,
+                ".write": false,
+                    "$data": {
+                        ".read": true,
+                        ".write": "!data.exists()",
+                    }
+                }
+            }
+            */
         </script>
     </body>
 </html>
