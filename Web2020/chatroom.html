@@ -116,34 +116,7 @@
 		firebase.analytics();
 		const database = firebase.database();
 
-		firebase.auth().onAuthStateChanged(function(user) {
-
-			if (user) {
-
-				if( user.displayName != null ){
-
-					let userPath = "/user_information/" + user.uid ;
-					const ref = firebase.database().ref(userPath);
-
-					ref.once('value').then(function(snapshot) {
-
-						var val = snapshot.val();
-
-						$("#username").val(val.username);
-						$("#gender").val(val.gender);
-						$("#age").val(val.age);
-						$("#introduce").val(val.about);
-
-					});
-				}
-
-			}
-			else {
-			  // User is signed out.
-			  // ...
-			  message.innerHTML ="\<meta http-equiv = \"refresh\" content = \"0; url = \/index.html\" \/\>";
-			}
-		});
+		
 
 		submit.addEventListener('click', () => {
 
