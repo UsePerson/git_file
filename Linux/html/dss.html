@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Data System Structure</title>
+    </head>
+    <style>
+        table{
+            border: 1px solid #333;
+            background-color: #eee;
+        }
+        td {
+            padding: 5px;
+            border: 1px solid #333;
+        }
+        thead{
+
+            background-color: #333;
+            color: #fff;
+        }
+
+    </style>
+    <body>
+        <h1> Data System Structure </h1>
+        <hr>
+        <table style=" width: 60%;">
+            <thead>
+                <tr >
+                    <th colspan="2" style="font-size: x-large;">
+                        Data System Structure
+                    </th>
+                </tr>  
+            </thead>
+            
+            <tbody  style="border:2px solid #000 ;width:50%;">
+                <tr>
+                    <td style="width: 20%;"> /bin   </td>
+                    <td> 放 single-user mode 可用的基本指令, ex: cat, ls, cp </td> 
+                </tr>
+                <tr>
+                    <td> /sbin   </td>
+                    <td> Essential system binaries </td> 
+                </tr>  
+                <tr>
+                    <td> /boot  </td>
+                    <td> Boot loader files </td> 
+                </tr>
+                <tr>
+                    <td> /dev   </td>
+                    <td> 放置 device 相關的檔案，ex  滑鼠、鍵盤 </td> 
+                </tr>
+                <tr>
+                    <td> /etc  </td>
+                    <td> 放置 system 相關的檔案</td> 
+                </tr>
+                <tr>
+                    <td> /home  </td>
+                    <td> user 的家目錄</td> 
+                </tr>
+                <tr>
+                    <td> /root  </td>
+                    <td> sudo 的家目錄</td> 
+                </tr>
+                <tr>
+                    <td> /lib  </td>
+                    <td> Libraries essential for the binaries in /bin/ and /sbin/ </td> 
+                </tr>
+                <tr>
+                    <td> /lib64 </td>
+                    <td> system 函式庫和 kernel 函式庫 (主要放64位元) </td> 
+                </tr>
+                <tr>
+                    <td> /proc  </td>
+                    <td> map 到 process table, 人們覺得它好棒棒, 所以加了很多的東西 ex  cpuinfo, device infomation..., 所以出現了一些問題</td> 
+                    
+                </tr>
+                <tr>
+                    <td> /sys  </td>
+                    <td> 因為 /proc 那邊之前加了太多東西， 所以為了解決那個問題，所以多了 /sys 來 hold system information</td> 
+                </tr>
+                <tr>
+                    <td> /usr  </td>
+                    <td> 是 Secondary hierarchy for read-only user data，包含大多數 user utilities and applications   </td> 
+                </tr>
+                <tr>
+                    <td> /media  </td>
+                    <td> 可移動式 device 的臨時安裝目錄</td> 
+                </tr>
+                <tr>
+                    <td> /mnt  </td>
+                    <td>臨時掛載目錄</td> 
+                </tr>
+                <tr>
+                    <td> /opt  </td>
+                    <td>包含附加應用程序。</td> 
+                </tr>
+                <tr>
+                    <td> /srv  </td>
+                    <td>此系統服務的特定於站點的數據，例如Web服務器的數據和腳本，FTP服務器提供的數據以及版本控制系統的存儲庫。</td> 
+                </tr>
+                <tr>
+                    <td> /tmp  </td>
+                    <td> 暫存的資料夾，包含由 system 和 user 創建出來的檔案，這些檔案通常在重新開機就被刪掉ㄌ</td> 
+                </tr>
+            </tbody>
+            
+        </table>
+        <ol> <b><em>掛載 : </em></b>也就是將軟體上載到虛擬光碟機，並安裝的意思。</ol>
+        <hr>
+        <h3>
+            <a href="../index.html">Home</a>
+        </h3>
+    </body>
+</html>

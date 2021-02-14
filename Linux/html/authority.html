@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>
+            Authority 
+        </title>
+    </head>
+    <style>
+        table{
+            border: 1px solid #000;
+        }
+        td{
+            border: 1px solid #000;
+            width: 5%;
+            padding: 5px;
+        }
+        .first{
+            background-color: #555;
+            color: #fff;
+        }
+        
+        thead{
+
+            background-color: #333;
+            color: #fff;
+        }
+        ul{
+            font-size: x-large;
+        }
+    </style>
+    <body>
+    <h1>
+        Authority 
+    </h1>
+    <hr>
+    <ul>
+        <li>
+            <b> r </b> : 可讀取，用 4 表示
+        </li>
+        <li>
+            <b> w </b> : 可寫入，用 2 表示
+        </li>
+        <li>
+            <b> x </b> : 可執行，用 1 表示
+        </li>
+        <li>
+            <b> - </b> : 無權限，用 0 表示
+        </li>
+    </ul>
+    <div style="font-size: 30px;">
+        可以用 
+        <b>
+            ls -l
+        </b>
+        檢視檔案權限
+    </div> 
+    <hr>
+
+    <table style="border: 2xp;">
+        <tr>
+            <td class="first">
+                第一欄
+            </td>
+            <td class="first">
+                第二欄
+            </td>
+            <td class="first">
+                第三欄
+            </td>
+            <td class="first">
+                第四欄
+            </td>
+            <td class="first">
+                第五欄
+            </td>
+            <td class="first">
+                第六欄
+            </td>
+            <td class="first">
+                第七欄
+            </td>
+        </tr>
+        <tr>
+            <td>
+                使用者權限
+            </td>
+            <td>
+                檔案數量
+            </td>
+            <td>
+                擁有者
+            </td>
+            <td>
+                群組
+            </td>
+            <td>
+                檔案大小
+            </td>
+            <td>
+                檔案建立時間
+            </td>
+            <td>
+                檔案名稱
+            </td>
+        </tr>
+    </table>
+    <h3>chmod</h3>
+    <ul>
+        <li>
+            修改檔案權限
+        </li>
+    </ul>
+    <h3>chown</h3>
+    <ul>
+        <li>
+            修改檔案擁有者與群組
+        </li>
+    </ul>
+    <hr>
+    <h3>
+        第一欄：使用者權限
+    </h3>
+    <ul>
+        <li>
+            由 10 個字元組成
+        </li>
+    </ul>
+   
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="10" style="font-size: x-large;">
+                    使用者權限
+                </th>
+            </tr>  
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="width: 10%;">
+                    第一字元
+                </td>
+                <td style="width: 10%;">
+                    第二字元
+                </td>
+                <td  style="width: 10%;">
+                    第三字元
+                </td>
+                <td  style="width: 10%;">
+                    第四字元
+                </td>
+                <td  style="width: 10%;">
+                    第五字元
+                </td>
+                <td  style="width: 10%;">
+                    第六字元
+                </td>
+                <td  style="width: 10%;">
+                    第七字元
+                </td>
+                <td  style="width: 10%;">
+                    第八字元
+                </td>
+                <td  style="width: 10%;">
+                    第九字元
+                </td>
+                <td  style="width: 10%;">
+                    第十字元
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    檔案型態
+                </td>
+                <td colspan="3">
+                    擁有者 的存取權限
+                </td>
+                <td  colspan="3">
+                    擁有者 所屬群組成員的存取權限
+                </td>
+                <td  colspan="3">
+                    其他使用者 的存取權限
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>
+        檔案型態
+    </h3>
+    <ul>
+        <li>
+            <d>-</d> 為檔案
+        </li>
+        <li>
+            <d>d</d> 表示目錄
+        </li>
+        <li>
+            <d>1</d> 表示連結檔案
+        </li>
+    </ul>
+
+    <hr>
+    <h2>
+        <a href="../index.html">
+            Home
+        </a>
+    </h2>    
+    </body>
+</html>
